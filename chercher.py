@@ -1,76 +1,157 @@
 def recherche_property(immeuble_list) :
     val = input("saisissez la property souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.property.lower())
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.property.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_id(immeuble_list) :
     val = input("saisissez l'id souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.id.lower())
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.id.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_date(immeuble_list) :
     val = input("saisissez la date souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.date.lower())
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.date.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_rue(immeuble_list) :
     val = input("saisissez la rue souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.rue.lower())
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.rue.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_ville(immeuble_list) :
     val = input("saisissez la ville souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.ville.lower())
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.ville.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 
 def recherche_zip(immeuble_list) :
-    val = input("saisissez la zip souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.zip.lower())
+    val = input("saisissez le zip souhaité\n")
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.zip.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_nom(immeuble_list) :
-    val = input("saisissez la nom souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.nom.lower())
+    val = input("saisissez le nom souhaité\n")
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.nom.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 def recherche_prenom(immeuble_list) :
-    val = input("saisissez la prenom souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.prenom.lower())
+    val = input("saisissez le prenom souhaité\n")
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.prenom.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
-def recherche_id(immeuble_list) :
-    val = input("saisissez la id souhaité\n")
-    immeuble_list_recherche = (x for x in immeuble_list if val.lower() == x.id.lower())
+
+def recherche_email(immeuble_list) :
+    val = input("saisissez l'email souhaité\n")
+    immeuble_list_recherche = []
+
+    for immeuble in immeuble_list :
+        if immeuble.email.lower() == val.lower():
+            immeuble_list_recherche.append(immeuble)
+    if not immeuble_list_recherche:
+        print("pas de résultats pour cette recherche\n")
+        return
+
+    print("\nproperty, id, date d'aquisition, rue, ville, zip, nom, prenom, email\n")
     for immeuble in immeuble_list_recherche :
         print(immeuble.property, immeuble.id, immeuble.date, immeuble.rue, immeuble.ville, immeuble.zip, immeuble.nom, immeuble.prenom, immeuble.email, sep=', ')
     print("\n")
     return
-    
+
 
 def chercher(immeuble_list) :
     print("sur quelle colone voulez vous faire votre recherche ?")
